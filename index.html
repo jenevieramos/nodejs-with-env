@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{SITE_NAME}}</title>
+  <style>
+    body { font-family: Georgia, serif; background: #f3ece2; color: #2b1d14; margin: 0; }
+    main { max-width: 560px; margin: 0 auto; padding: 56px 20px; }
+    h1 { font-size: 2.6rem; margin: 0 0 6px; }
+    p.tag { margin: 0 0 32px; color: #6b4f3a; }
+    ul { list-style: none; padding: 0; margin: 0 0 40px; }
+    li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px dotted #b79b82; }
+    .env { background: #2b1d14; color: #f3ece2; padding: 16px 20px; border-radius: 8px; font-family: monospace; font-size: .9rem; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>{{SITE_NAME}}</h1>
+    <p class="tag">{{TAGLINE}}</p>
+
+    <ul>
+      <li><span>Espresso</span><span>$2.50</span></li>
+      <li><span>Flat white</span><span>$3.80</span></li>
+      <li><span>Cold brew</span><span>$4.20</span></li>
+      <li><span>Almond croissant</span><span>$3.40</span></li>
+    </ul>
+
+    <div class="env">
+      Loaded from .env<br>
+      PORT = {{PORT}}<br>
+      SECRET_API_KEY = {{API_KEY}}
+    </div>
+  </main>
+</body>
+</html>
