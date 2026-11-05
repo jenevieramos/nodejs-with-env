@@ -1,0 +1,17 @@
+{
+  "name": "website-with-env",
+  "version": "1.0.0",
+  "description": "Tiny Node.js website that reads its settings from a .env file",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18.13"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
